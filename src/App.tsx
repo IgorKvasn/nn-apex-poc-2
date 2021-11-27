@@ -18,7 +18,9 @@ function App() {
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
 
-        <button onClick={() => increment()}>Click me</button>
+        <button onClick={() => increment()} type="button">
+          Click me
+        </button>
         {value}
         <a
           className="App-link"
