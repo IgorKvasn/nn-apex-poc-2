@@ -5,6 +5,11 @@ import "./App.css";
 function App() {
   const [value, setValue] = useState(1);
 
+  function increment() {
+    console.log("increment");
+    setValue(value + 1);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -13,7 +18,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
 
-        <button onClick={() => setValue(value + 1)}>Click me</button>
+        <button onClick={() => increment()}>Click me</button>
         {value}
         <a
           className="App-link"
