@@ -22,20 +22,26 @@ function App() {
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
 
-        <button onClick={() => increment("button")} type="button">
+        <button
+          onClick={() => increment("button")}
+          onMouseUp={() => increment("mouse up - button")}
+          type="button"
+        >
           Click me
         </button>
 
         <div
           onClick={() => increment("div")}
+          onMouseUp={() => increment("mouse up - div")}
           style={{
             width: 100,
             aspectRatio: "1/1",
             backgroundColor: "orange",
             cursor: "pointer",
+            marginTop: "1em",
           }}
         >
-          Click me (DIV)
+          Click me
         </div>
         {value}
         <a
